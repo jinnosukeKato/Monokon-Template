@@ -43,12 +43,13 @@ void segStep(int l, int r) {
     digitalWrite(2, LOW);
     digitalWrite(3, LOW);
     _step(n);
+    // 4パターンのうち半分ずつで区切って左右を光らせる
     if (n % 2 == 0) {
       segL(l);
     } else {
       segR(r);
     }
-    delay(1);
+    delay(1); // ここは要調整 delayMicroseconds を使って細かくしてもいいくらい
   }
 }
 
