@@ -52,7 +52,7 @@ void steppingL() {
   }
 }
 
-// ステッピング1/4ステップ
+// ステッピング1ステップ
 void _step(int n) {
   int ptn[4][4] = {
     {HIGH, HIGH, LOW, LOW},
